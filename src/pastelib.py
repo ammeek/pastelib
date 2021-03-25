@@ -32,7 +32,7 @@ def makePaste(pasteName, pasteText, expiryDate = "N", privacy = "0", devKey = de
 	output = utils.outputBytesToString(response.content)
 	return output
 
-def deletePaste(pasteKey, sessionKey=sessionKey, devKey=sessionKeys.devKey):
+def deletePaste(pasteKey, sessionKey = sessionKey, devKey = devKey):
 	paramaters = {
 		"api_dev_key": devKey,
 		"api_user_key": sessionKey,
